@@ -24,7 +24,7 @@ export const Navbar = () => {
                 <li><CustomLink to='/contactos'>Contactos</CustomLink></li>
                 {/* <button className='navbar-btn navbar-close-btn'> <FaTimes /></button> */}
             </ul>
-            <button className='navbar-ham-menu'> <FaBars/></button>
+            <button className='navbar-ham-menu'> <FaBars size={20}/></button>
         </nav>
     )
 }

@@ -6,6 +6,7 @@ import { Sobre } from './pages/Sobre';
 import { Cursos } from './pages/Cursos';
 import { Areas } from './pages/Areas';
 import { Homepage } from './pages/Homepage';
+import { Footer } from './components/Footer/Footer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/contactos' element={<Contactos />}/>
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

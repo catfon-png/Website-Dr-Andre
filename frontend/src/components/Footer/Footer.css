@@ -1,0 +1,30 @@
+footer {
+    background-color: #2B4C68;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.footer-left-contacts{
+    line-height: 0.5;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+}
+
+.footer-right a{
+    color: inherit;
+}
