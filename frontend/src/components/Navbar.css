@@ -42,9 +42,30 @@
 
 }
 
+.navbar-ham-menu{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;  
+    position: absolute;
+    top: 25px;
+    right: 1rem;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    width: 31px;
+    height: 21px;
+}
 
-@media only screen and (min-width: 600px){
-    body{
-        background-color: aqua;
+@media (max-width: 400px){
+    .navbar-ham-menu{
+        display: flex;
+    }
+
+    .navbar ul{
+        visibility: hidden;
+        opacity: 0;
     }
 }
