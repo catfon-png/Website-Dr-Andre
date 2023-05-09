@@ -11,14 +11,16 @@
     left: 0;
     transition: 1s;
     z-index: 1;
+    width: 100%;
 }
 
 .navbar ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
     display: flex;
-    gap: 1rem;
+    padding: 0;
+    margin-right: 1rem;
+    list-style: none;
+    gap: 0.7rem;
+    z-index: 1;
 
 }
 .navbar-logo{
@@ -36,37 +38,90 @@
 .active{
     border-bottom: 3px solid white;
     font-weight: 600;
+    transition: 0.5s;
 
 }
 .navbar li:hover{
     font-weight: 600;
+    transition: 0.4s;
 
 }
 
 .navbar-ham-menu{
-    padding: 5px;
+    padding: 0px;
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
     color: white;  
     position: absolute;
-    top: 25px;
+    top: 1.5rem;
     right: 1rem;
-    /* display: none; */
     flex-direction: column;
+    display: flex;
     justify-content: center;
-    width: 31px;
+    align-items: center;
+    width: 44px;
     height: 21px;
 }
 
-/* @media (max-width: 400px){
-    .navbar-ham-menu{
-        display: flex;
-    }
+.navbar-close-btn{
+    padding: 0px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;  
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+@media (max-width: 600px){
+    .navbar .navbar-links{
+        visibility: hidden;
+        opacity: 0;
+        
+    }
+    
+
+}
+@media (min-width: 600px) and (max-width: 1024px){
+    .navbar .navbar-logo{
+        margin-left: 2.5rem;
+    }
     .navbar ul{
+        margin-right: 3rem;
+    }
+    .navbar-ham-menu{
         visibility: hidden;
         opacity: 0;
     }
+
+}
+
+@media (min-width: 1024px){
+    .navbar .navbar-logo{
+        margin-left: 4rem;
+    }
+    .navbar ul{
+        margin-right: 6rem;
+    }
+    .navbar-ham-menu{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 500px){
+    .navbar-links{
+        visibility: hidden;
+        opacity: 0;
+    }
+
 } */

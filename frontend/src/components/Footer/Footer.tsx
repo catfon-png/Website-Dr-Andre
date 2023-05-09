@@ -8,7 +8,7 @@ export const Footer = () => {
         <footer>
             <div className='footer-left'>
                 <h3>Contactos</h3>
-                <div className='footer-left-contacts'>
+                <div className='footer-left-contact-info'>
                     <p>andrevilelalves@gmail.com</p>
                     <p>+351 964 652 648</p>
                 </div>
