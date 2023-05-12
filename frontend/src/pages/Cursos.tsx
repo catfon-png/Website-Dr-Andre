@@ -1,9 +1,8 @@
 import React from 'react'
+import { Opa } from '../components/OPA/Opa'
 
 export const Cursos = () => {
     return (
-        <div>
-            <h1>Cursos</h1>
-        </div>
+        <Opa />
     )
 }

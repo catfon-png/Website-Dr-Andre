@@ -8,3 +8,23 @@
     margin-right: 3em;
   }
 } */
+
+.pages-container{
+  min-height: 75vh;
+  /* margin-bottom: 20px; */
+  margin: 0 3rem 0 3rem;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .pages-container{
+  margin: 0 5rem 0 5rem;
+
+  }
+}
+
+@media (min-width: 1024px){
+  .pages-container{
+    margin: 0 10rem 0 10rem;
+  
+    } 
+}

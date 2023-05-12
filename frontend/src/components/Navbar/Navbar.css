@@ -9,9 +9,10 @@
     position: sticky;
     top: 0;
     left: 0;
-    transition: 1s;
+    /* transition: 1s; */
     z-index: 1;
-    width: 100%;
+    width: 100vw;
+    height: 10vh;
 }
 
 .navbar ul{
@@ -93,7 +94,7 @@
 }
 @media (min-width: 600px) and (max-width: 1024px){
     .navbar .navbar-logo{
-        margin-left: 2.5rem;
+        margin-left: 3rem;
     }
     .navbar ul{
         margin-right: 3rem;
