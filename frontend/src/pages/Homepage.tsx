@@ -3,15 +3,16 @@ import { PrimaryButton } from '../components/Buttons/PrimaryButton'
 import { SecondaryButton } from '../components/Buttons/SecondaryButton'
 import { Question } from '../components/Question/Question'
 import { Opa } from '../components/OPA/Opa'
+import dentist from '../resources/implants.png'
+import { AreaContainer } from '../components/Areas/AreaContainer'
 
 export const Homepage = () => {
   return (
     <div>
       <h1>Homepage</h1>
-    <PrimaryButton />
-    <SecondaryButton />
-    <Opa />
-    <Question />
+      <AreaContainer />
+      <Opa />
+      <Question />
     </div>
   )
 }

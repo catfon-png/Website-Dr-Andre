@@ -1,0 +1,12 @@
+.area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area img {
+    object-fit: contain;
+    width: 20vw;
+    height: 20vh;
+
+}

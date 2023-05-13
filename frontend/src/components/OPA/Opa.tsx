@@ -6,8 +6,8 @@ import logo from '../../resources/opa black no bg.png'
 export const Opa = () => {
     const navigate = useNavigate();
     const navigateToContacts = () => {
-        // navigate('/contactos')
-        console.log(window.location.pathname)
+        navigate('/contactos')
+        // console.log(window.location.pathname)
     }
 
 
@@ -16,7 +16,9 @@ export const Opa = () => {
             <div className='opa-left'>
                 <img src={logo} alt="Oral Pathology Academy Logo" />
                 <div className='opa-buttons'>
-                    <button className='btn-inscrever'>Inscreva-se</button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUdsFd_Kp9Rrv2bLk5Am0zpO17LF0XG5E1TOUY7pypfpbl5w/viewform?usp=send_form" target='_blank'>
+                        <button className='btn-inscrever'>Inscreva-se</button>
+                    </a>
                     <button className='btn-contacto' onClick={navigateToContacts}>Entre em contacto</button>
                 </div>
             </div>
