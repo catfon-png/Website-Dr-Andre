@@ -1,0 +1,15 @@
+.contacto-andre{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: #2B4C68;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.email, .instagram, .linkedin{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Opa.css'
 import logo from '../../resources/opa black no bg.png'
+import flyer from '../../resources/IMG_0023.jpeg'
 
 export const Opa = () => {
     const navigate = useNavigate();
@@ -9,22 +10,24 @@ export const Opa = () => {
         navigate('/contactos')
         // console.log(window.location.pathname)
     }
-
+    const [isHomepage, setIsHomepage] = useState(true);
+    useEffect(() => {
+        setIsHomepage(window.location.pathname === '/')
+    })
 
     return (
         <section className='opa'>
             <div className='opa-left'>
                 <img src={logo} alt="Oral Pathology Academy Logo" />
-                <div className='opa-buttons'>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUdsFd_Kp9Rrv2bLk5Am0zpO17LF0XG5E1TOUY7pypfpbl5w/viewform?usp=send_form" target='_blank'>
-                        <button className='btn-inscrever'>Inscreva-se</button>
-                    </a>
-                    <button className='btn-contacto' onClick={navigateToContacts}>Entre em contacto</button>
-                </div>
+                {!isHomepage ? 
+            <img src={flyer} alt="Oral Pathology Academy Flyer" /> :
+            <div></div>    
+            }
+
             </div>
             <div className='opa-right'>
                 <h1 className="opa-heading">Oral Pathology Academy</h1>
-                {window.location.pathname === '/cursos' ?
+                {!isHomepage ?
                     <div className='opa-long-text'>
                         <p>OPA, a academia que pretende descomplicar a patologia oral. </p>
                         <p> O cancro oral é o sexto mais comum no mundo, contudo, continua a ser diagnosticado em estadios muito avançados com impacto severo na qualidade de vida dos pacientes, podendo até causar a morte.</p>
@@ -41,7 +44,14 @@ export const Opa = () => {
                         <p>Fundador desta academia cuja missão consiste em descomplicar a patologia oral. </p>
                         <p>O primeiro curso desta academia irá ocorrer a 16 e 17 de junho de 2023, em Lisboa.</p>
                     </div>}
+                <div className='opa-buttons'>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUdsFd_Kp9Rrv2bLk5Am0zpO17LF0XG5E1TOUY7pypfpbl5w/viewform?usp=send_form" target='_blank'>
+                        <button className='btn-inscrever'>Inscreva-se</button>
+                    </a>
+                    <button className='btn-contacto' onClick={navigateToContacts}>Entre em contacto</button>
+                </div>
+
             </div>
-        </section >
+        </section>
     )
 }

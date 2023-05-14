@@ -16,7 +16,7 @@ export const Footer = () => {
             </div>
             <div className='footer-right'>
                 <a href='https://www.instagram.com/andrevilelalves_dds/' target="_blank">
-                    <AiFillInstagram size={30} />
+                    <AiFillInstagram size={32} />
                 </a>
                 <a href='https://www.linkedin.com/in/andrevilelalves/' target="_blank">
                     <BsLinkedin size={28} />

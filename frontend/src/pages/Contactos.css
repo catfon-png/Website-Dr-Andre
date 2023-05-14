@@ -1,0 +1,11 @@
+.contactos{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px){
+    .contactos{
+        display: flex;
+        flex-direction: row;
+    }   
+}
