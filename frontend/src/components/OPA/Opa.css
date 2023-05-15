@@ -3,7 +3,10 @@
     flex-direction: column;
     /* margin: 0 3rem 0 3rem; */
 }
-
+.opa-up{
+    display: flex;
+    flex-direction: column;
+}
 .opa-left{
     display: flex;
     flex-direction: column;
@@ -19,7 +22,7 @@ img {
 .opa-buttons {
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
+    align-items: center;
     margin: 0 3rem 0 3rem;
 
 }
@@ -86,10 +89,14 @@ img {
 @media (min-width: 650px) {
     .opa {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-content: center;
         justify-content: center;
         /* flex-wrap: nowrap; */
+    }
+    .opa-up{
+        display: flex;
+        flex-direction: row;
     }
     .opa-heading{
         display: flex;
@@ -101,6 +108,10 @@ img {
         flex-direction: row;
         align-content: center;
         justify-content: flex-start;
+        position: relative;
+        /* margin-top: 3rem; */
+        top: -15vh;
+        left: 20vw;
 
     }
 

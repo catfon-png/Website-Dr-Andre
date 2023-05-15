@@ -1,6 +1,8 @@
 .question {
     background-color: #EAEAEA;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -8,6 +10,7 @@
     margin: 10px;
 }
 .question-btn {
+    align-self: center;
     background: #2B4C68;
     border-radius: 20px;
     color: white;
@@ -19,9 +22,17 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin: 10px;
 
+
 }
 
 .question-btn:hover{
     background: #457299;
     font-weight: 600;
+}
+
+@media (min-width: 650px) {
+    .question-btn {
+    align-self: flex-start;
+
+    }
 }
