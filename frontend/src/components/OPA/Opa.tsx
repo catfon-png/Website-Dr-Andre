@@ -7,7 +7,7 @@ import flyer from '../../resources/IMG_0023.jpeg'
 export const Opa = () => {
     const navigate = useNavigate();
     const navigateToContacts = () => {
-        navigate('/contactos')
+        navigate('/cursos')
         // console.log(window.location.pathname)
     }
     const [isHomepage, setIsHomepage] = useState(true);
@@ -17,7 +17,6 @@ export const Opa = () => {
 
     return (
         <section className='opa'>
-            <div className="opa-up">
                 <div className='opa-left'>
                     <img src={logo} alt="Oral Pathology Academy Logo" />
                     {!isHomepage ?
@@ -44,16 +43,15 @@ export const Opa = () => {
                             <p>Fundador desta academia cuja missão consiste em descomplicar a patologia oral. </p>
                             <p>O primeiro curso desta academia irá ocorrer a 16 e 17 de junho de 2023, em Lisboa.</p>
                         </div>}
+                    <div className='opa-buttons'>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUdsFd_Kp9Rrv2bLk5Am0zpO17LF0XG5E1TOUY7pypfpbl5w/viewform?usp=send_form" target='_blank'>
+                            <button className='btn-inscrever'>Inscreva-se</button>
+                        </a>
+                        {isHomepage ?
+                        <button className='btn-contacto' onClick={navigateToContacts}>Saiba mais &gt;</button> : <div></div>}
+                    </div>
                 </div>
-            </div>
-            <div className="opa-down">
-                <div className='opa-buttons'>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUdsFd_Kp9Rrv2bLk5Am0zpO17LF0XG5E1TOUY7pypfpbl5w/viewform?usp=send_form" target='_blank'>
-                        <button className='btn-inscrever'>Inscreva-se</button>
-                    </a>
-                    <button className='btn-contacto' onClick={navigateToContacts}>Entre em contacto</button>
-                </div>
-            </div>
+            
         </section>
     )
 }
