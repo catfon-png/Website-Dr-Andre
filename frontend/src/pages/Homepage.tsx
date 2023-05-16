@@ -4,7 +4,7 @@ import { SecondaryButton } from '../components/Buttons/SecondaryButton'
 import { Question } from '../components/Question/Question'
 import { Opa } from '../components/OPA/Opa'
 import dentist from '../resources/implants.png'
-import { AreaContainer } from '../components/Areas/AreaContainer'
+import { AreaContainer } from '../components/AreasHomepage/AreaContainer'
 
 export const Homepage = () => {
   return (

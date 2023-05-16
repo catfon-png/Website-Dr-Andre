@@ -6,9 +6,8 @@ import flyer from '../../resources/IMG_0023.jpeg'
 
 export const Opa = () => {
     const navigate = useNavigate();
-    const navigateToContacts = () => {
+    const navigateToCursos = () => {
         navigate('/cursos')
-        // console.log(window.location.pathname)
     }
     const [isHomepage, setIsHomepage] = useState(true);
     useEffect(() => {
@@ -48,7 +47,7 @@ export const Opa = () => {
                             <button className='btn-inscrever'>Inscreva-se</button>
                         </a>
                         {isHomepage ?
-                        <button className='btn-contacto' onClick={navigateToContacts}>Saiba mais &gt;</button> : <div></div>}
+                        <button className='btn-contacto' onClick={navigateToCursos}>Saiba mais &gt;</button> : <div></div>}
                     </div>
                 </div>
             

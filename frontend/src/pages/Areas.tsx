@@ -1,5 +1,5 @@
 import React from 'react'
-import { AreaContainer } from '../components/Areas/AreaContainer'
+import { AreaContainer } from '../components/AreasHomepage/AreaContainer'
 
 export const Areas = () => {
     return (

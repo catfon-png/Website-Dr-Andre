@@ -6,7 +6,6 @@ a{
     flex-direction: row;
 }
 .contacto-img{
-    /* align-items: flex-start; */
     width: 250px;
     height: 250px;
 }
@@ -30,12 +29,7 @@ a{
     .contacto{
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
     } 
-    /* .contacto-text{
-        margin-left: 1rem;
-    } */
-
 }
 
 @media (min-width: 1300px){
@@ -49,34 +43,3 @@ a{
         margin-left: 1rem;
     }
 }
-
-
-/* @media (min-width: 600px) and (max-width: 1200px){
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 5rem;
-
-    } 
-}
-
-@media (min-width: 1200px){
-    .contacto{
-        display: flex;
-
-        flex-direction: row;
-
-    
-    }
-    .contacto-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 10px;
-    }
-
-    .contacto-title{
-        margin-top: 0;
-    }
-}  */
