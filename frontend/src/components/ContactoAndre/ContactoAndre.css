@@ -1,15 +1,82 @@
-.contacto-andre{
-    display: flex;
-    flex-direction: column;
-}
+
 a{
     color: #2B4C68;
     text-decoration: none;
     display: flex;
     flex-direction: row;
 }
+.contacto-img{
+    /* align-items: flex-start; */
+    width: 300px;
+    height: 300px;
+}
 
 .email, .instagram, .linkedin{
     display: flex;
     flex-direction: row;
+    
 }
+
+.email p, .instagram p, .linkedin p{
+    padding-left: 5px;
+}
+
+.icon{
+    position: relative;
+    top: 10px;
+} 
+
+@media (min-width: 800px) and (max-width: 1300px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    } 
+    /* .contacto-text{
+        margin-left: 1rem;
+    } */
+
+}
+
+@media (min-width: 1300px){
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        margin-right: 5rem;
+
+    }
+    .contacto-text{
+        margin-left: 1rem;
+    }
+}
+
+
+/* @media (min-width: 600px) and (max-width: 1200px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 5rem;
+
+    } 
+}
+
+@media (min-width: 1200px){
+    .contacto{
+        display: flex;
+
+        flex-direction: row;
+
+    
+    }
+    .contacto-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+
+    .contacto-title{
+        margin-top: 0;
+    }
+}  */
