@@ -1,0 +1,22 @@
+.sobre-andre {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.sobre-andre-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 800px) {
+    .sobre-andre {
+        display: flex;
+        flex-direction: row;
+    }
+    .sobre-andre-img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+}

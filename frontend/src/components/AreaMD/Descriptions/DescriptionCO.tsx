@@ -19,7 +19,7 @@ export const DescriptionCO = () => {
         <li>Frenectomias (eliminação cirúrgica total de um freio);</li>
         <li>Trações cirúrgicas de dentes inclusos, etc.</li>
     </ul> </div>: 
-    <p className="area-description-short">'Área da Medicina Dentária que se dedica ao diagnóstico e tratamento cirúrgico das doenças, lesões e anomalias dos dentes, boca, maxilares e estruturas anexas'</p>}
+    <p className="area-description-short">Área da Medicina Dentária que se dedica ao diagnóstico e tratamento cirúrgico das doenças, lesões e anomalias dos dentes, boca, maxilares e estruturas anexas'</p>}
 </div>
   )
 }

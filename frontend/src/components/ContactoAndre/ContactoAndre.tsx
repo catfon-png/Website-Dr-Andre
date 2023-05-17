@@ -42,6 +42,7 @@ export const ContactoAndre = ({ foto, titulo, descriçãoFoto, email, iglink, in
                     :
                     <div></div>}
             </div>
+
         </div>
     )
 }
