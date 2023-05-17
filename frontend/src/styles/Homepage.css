@@ -3,3 +3,10 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.area-container .area img {
+    object-fit: contain;
+    width: 20vw;
+    height: 20vh;
+
+}

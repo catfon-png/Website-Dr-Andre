@@ -1,16 +1,26 @@
 import React from 'react'
-import { PrimaryButton } from '../components/Buttons/PrimaryButton'
-import { SecondaryButton } from '../components/Buttons/SecondaryButton'
+import implants from '../resources/implants (2).png'
+import dentist from '../resources/dentist.png'
+import tongue from '../resources/tongue.png'
 import { Question } from '../components/Question/Question'
 import { Opa } from '../components/OPA/Opa'
-import dentist from '../resources/implants.png'
-import { AreaContainer } from '../components/AreasHomepage/AreaContainer'
+import { DescriptionCO } from '../components/AreaMD/Descriptions/DescriptionCO'
+import { DescriptionImp } from '../components/AreaMD/Descriptions/DescriptionImp'
+import { DescriptionPO } from '../components/AreaMD/Descriptions/DescriptionPO'
+import { AreaMD } from '../components/AreaMD/AreaMD'
+import '../styles/Homepage.css'
 
 export const Homepage = () => {
+  const allAreas: [string, string, JSX.Element][] = [[dentist, 'Cirurgia Oral', <DescriptionCO />],
+  [implants, 'Implantologia', <DescriptionImp />],
+  [tongue, 'Patologia Oral', <DescriptionPO />]]
   return (
     <div>
       <h1>Homepage</h1>
-      <AreaContainer />
+      <section className='area-container'>
+        {allAreas.map(([img, title, description]) =>
+          <AreaMD image={img} title={title} description={description} />)}
+      </section>
       <Opa />
       <Question />
     </div>
