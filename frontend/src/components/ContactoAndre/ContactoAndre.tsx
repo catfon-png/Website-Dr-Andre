@@ -1,4 +1,3 @@
-// import fotoAndre from '../../resources/foto-andre.png'
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillInstagram } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
