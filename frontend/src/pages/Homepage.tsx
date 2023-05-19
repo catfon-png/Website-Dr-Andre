@@ -9,6 +9,7 @@ import { DescriptionImp } from '../components/AreaMD/Descriptions/DescriptionImp
 import { DescriptionPO } from '../components/AreaMD/Descriptions/DescriptionPO'
 import { AreaMD } from '../components/AreaMD/AreaMD'
 import '../styles/Homepage.css'
+import { Header } from '../components/Header/Header'
 
 export const Homepage = () => {
   const allAreas: [string, string, JSX.Element][] = [[dentist, 'Cirurgia Oral', <DescriptionCO />],
@@ -16,7 +17,7 @@ export const Homepage = () => {
   [tongue, 'Patologia Oral', <DescriptionPO />]]
   return (
     <div>
-      <h1>Homepage</h1>
+      <Header />
       <section className='area-container'>
         {allAreas.map(([img, title, description]) =>
           <AreaMD image={img} title={title} description={description} />)}

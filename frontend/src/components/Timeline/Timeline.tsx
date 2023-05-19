@@ -10,7 +10,7 @@ export const Timeline = () => {
   return (
     <div className='timeline'>
         <h2 className='timeline-fim'>Hoje</h2>
-        <VerticalTimeline>
+        <VerticalTimeline className='timeline-title'>
             {timelineElements.map((element: any) => {
                 return ( 
                     <VerticalTimelineElement
@@ -27,7 +27,7 @@ export const Timeline = () => {
                 )
             })}
         </VerticalTimeline>
-        <h2 className='timeline-início'>2015</h2>
+        <h2 className='timeline-inicio'>2015</h2>
     </div>
   )
 }

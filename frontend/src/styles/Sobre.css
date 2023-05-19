@@ -1,3 +1,6 @@
+.sobre{
+    /* margin: 0 !important; */
+}
 .sobre-andre {
     display: flex;
     flex-direction: column-reverse;
@@ -9,11 +12,16 @@
     height: 100%;
 }
 
+.sobre-formação {
+    /* margin: 0 !important; */
+}
+
 @media (min-width: 800px) {
     .sobre-andre {
         display: flex;
         flex-direction: row;
     }
+
     .sobre-andre-img {
         width: 25rem;
         height: 25rem;

@@ -2,3 +2,28 @@
     background: rgb(43,76,104);
     background: linear-gradient(0deg, rgba(43,76,104,1) 32%, rgba(137,190,236,0) 100%);
 }
+
+.timeline-title{
+font-size: 1em;
+}
+h3{
+    padding-top: 0.25em;
+}
+.vertical-timeline-element-content{
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0), 0 0.4em 1.25em rgba(0,0,0,0) !important;
+    padding: 0em 3em 1em 3em !important;
+    background-color: rgba(0,0,0, 0);
+}
+
+.timeline-fim, .timeline-inicio{
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-timeline-element-content-arrow{
+    display: none;
+}
+
+.vertical-timeline-element-icon{
+    /* display: none; */
+}

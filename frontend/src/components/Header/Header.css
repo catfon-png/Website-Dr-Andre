@@ -1,0 +1,18 @@
+.header{
+    background-color: #B5C7D8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-top: 0 !important;
+    top: -5;*/
+} 
+
+.header-title{
+    padding-top: 20rem;
+    margin-block-end: 0
+}
+
+.header-left{
+    text-align: end;
+}
+
