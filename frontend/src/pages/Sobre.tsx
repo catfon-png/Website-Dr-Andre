@@ -1,5 +1,6 @@
 import '../styles/Sobre.css'
 import foto from '../resources/IMG_3202.png'
+import { Timeline } from '../components/Timeline/Timeline'
 
 export const Sobre = () => {
     return (
@@ -32,7 +33,7 @@ export const Sobre = () => {
                 </div>
             </div>
             <div className="sobre-formação">
-                
+                <Timeline />
             </div>
         </div>
     )
