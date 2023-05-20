@@ -12,7 +12,22 @@
     margin-bottom: 1rem;
     padding: 1rem;
 }
+.area-atuação-heading{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    color: #2B4C68;
+}
 
+.area-atuação .area-title{
+    justify-content: left;
+
+}
+
+.area-atuação .area-description{
+    text-align: left;
+
+}
 .area-atuação .area-img {
     width: 20vw;
     height: 20vh;

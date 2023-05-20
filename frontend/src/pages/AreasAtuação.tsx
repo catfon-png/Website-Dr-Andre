@@ -14,7 +14,7 @@ export const AreasAtuação = () => {
 
     return (
         <div className='area-atuação'>
-            <h1>Áreas de atuação</h1>
+            <h1 className='area-atuação-heading'>Áreas de atuação</h1>
             {allAreas.map(([img, title, description]) =>
                 <AreaMD image={img} title={title} description={description} />)}
 

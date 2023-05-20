@@ -9,7 +9,9 @@ type AreaProps = {
 export const AreaMD = ({ image, title, description }: AreaProps) => {
     return (
         <div className='area'>
-            <img src={image} alt={title} className='area-img' />
+            <div className="area-img">
+                <img src={image} alt={title} />
+            </div>
             <div className="area-text">
                 <h2 className="area-title">{title}</h2>
                 {description}

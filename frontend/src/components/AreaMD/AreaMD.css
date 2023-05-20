@@ -4,6 +4,7 @@
     font-weight: 400;
     display: flex;
     justify-content: center;
+    color: #2B4C68
     
 }
 .area-img{
@@ -11,3 +12,4 @@
     justify-content: center;
     margin-right: 0;
 }
+
