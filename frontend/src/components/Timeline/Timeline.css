@@ -1,29 +1,54 @@
 .timeline {
-    background: rgb(43,76,104);
-    background: linear-gradient(0deg, rgba(43,76,104,1) 32%, rgba(137,190,236,0) 100%);
+    background: rgb(43, 76, 104);
+    background: linear-gradient(0deg, rgb(43, 76, 104) 32%, rgba(137, 190, 236, 0) 100%);
 }
 
-.timeline-title{
-font-size: 1em;
+.timeline-title {
+    font-size: 1em;
+
+   
+
 }
-h3{
+.vertical-timeline-element-title{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    color: #2B4C68;
+    text-shadow: -0.5px 0 rgb(255, 255, 255), 0 0.5px rgb(255, 255, 255), 0.5px 0 rgb(255, 255, 255), 0 -0.5px rgb(255, 255, 255);
+}
+.vertical-timeline-element-subtitle, #description, .date{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: #000000;
+    /* text-shadow: -0.5px 0 rgb(0, 0, 0), 0 0.5px rgb(0, 0, 0), 0.5px 0 rgb(0, 0, 0), 0 -0.5px rgb(0, 0, 0); */
+
+}
+h3 {
     padding-top: 0.25em;
 }
-.vertical-timeline-element-content{
-    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0), 0 0.4em 1.25em rgba(0,0,0,0) !important;
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0), 0 0.4em 1.25em rgba(0, 0, 0, 0) !important;
     padding: 0em 3em 1em 3em !important;
-    background-color: rgba(0,0,0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.timeline-fim, .timeline-inicio{
+.timeline-fim,
+.timeline-inicio {
     display: flex;
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: black;
+
 }
 
-.vertical-timeline-element-content-arrow{
+.vertical-timeline-element-content-arrow {
     display: none;
 }
 
-.vertical-timeline-element-icon{
+.vertical-timeline-element-icon {
     /* display: none; */
 }

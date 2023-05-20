@@ -24,19 +24,20 @@ export const ContactoAndre = ({ foto, titulo, descriçãoFoto, email, iglink, in
                 <h2 className="contacto-title">{titulo}</h2>
                 <div className="email">
                     <HiOutlineMail size={32} color="#2B4C68" className='icon' />
-                    <p>{email}</p>
+                    <a href={`mailto:${email}`}><p className='mail-p'>{email}</p></a>
+
                 </div>
                 <div className="instagram">
                     <a href={iglink} target="_blank">
                         <AiFillInstagram size={34} className='icon' />
-                        <p>{instagram}</p>
+                        <p className='instagram-p'>{instagram}</p>
                     </a>
                 </div>
                 {lilink ?
                     <div className="linkedin">
                         <a href={lilink} target="_blank">
                             <BsLinkedin size={26} className='icon'/>
-                            <p>{linkedin}</p>
+                            <p className='linkedin-p'>{linkedin}</p>
                         </a>
                     </div>
                     :

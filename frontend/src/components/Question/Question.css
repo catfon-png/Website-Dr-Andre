@@ -3,11 +3,24 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-
+    margin: 20px 0;
 }
 
-.question-heading, .question-text {
+.question-heading{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: #2B4C68;
     margin: 10px;
+    padding: 5px 10px 0px 10px;
+}
+
+.question-text{
+    font-family: 'Open Sans', sans-serif;
+    color: #262522;
+    font-weight: 200;
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
 }
 .question-btn {
     align-self: center;
@@ -20,8 +33,10 @@
     width: 200px;
     height: 38px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    margin: 10px;
-
+    margin: 10px 15px;
+    transition: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 
 }
 

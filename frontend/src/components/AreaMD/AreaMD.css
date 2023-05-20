@@ -1,12 +1,13 @@
-/* .area {
+.area-title{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.9em;
+    font-weight: 400;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    
 }
-
-.area img {
-    object-fit: contain;
-    width: 20vw;
-    height: 20vh;
-
-} */
+.area-img{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+}

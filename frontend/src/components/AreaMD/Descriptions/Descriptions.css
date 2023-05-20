@@ -1,0 +1,12 @@
+.area-description{
+    font-family: 'Open Sans', sans-serif;
+    color: #262522;
+    font-weight: 100;
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 10px;
+    display: flex;
+    text-align: center;
+    /* margin-top: 0; */
+}

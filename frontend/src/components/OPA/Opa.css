@@ -1,6 +1,8 @@
 .opa {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+
 }
 
 .opa-left{
@@ -25,14 +27,35 @@ img {
 .opa-heading {
     align-content: center;
     justify-content: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+
 }
 
 .opa-text {
     align-content: center;
     justify-content: center;
     margin-bottom: 1rem;
+    
 
 }
+.opa-long-text, .opa-short-text, .contactos-opa-heading, .email, .instagram{
+    font-family: 'Open Sans', sans-serif;
+    color: #262522;
+}
+
+.contactos-opa-heading{
+    font-size: 1.2em;
+    margin-bottom: 2px;
+}
+.email, .instagram{
+    height: 40px;
+}
+/* .email-p:hover, .instagram-p:hover{
+    text-decoration: underline;
+    color: #2B4C68;
+} */
 
 .btn-inscrever {
     background: #2B4C68;
@@ -45,6 +68,8 @@ img {
     height: 38px;
     margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     /* margin-right: 4px; */
 
 }
@@ -52,6 +77,8 @@ img {
 .btn-inscrever:hover {
     background: #457299;
     font-weight: 600;
+    transition: 0.5s;
+
 
 }
 
@@ -61,6 +88,8 @@ img {
     color: #2B4C68;
     padding: 10px;
     border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     /* border: 2px solid #2B4C68; */
     cursor: pointer;
     /* width: 200px;

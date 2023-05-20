@@ -8,17 +8,21 @@
 } 
 
 .header-title{
-    padding-top: 20rem;
-    margin-block-end: 0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 100;
-    font-size: 3em;
+    font-size: 4em;
     color: #2B4C68;
+    padding-top: 20rem;
+    margin-bottom: 0;
 }
 
 .header-subtitle{
     font-family: 'Open Sans', sans-serif;
+    color: #2B4C68;
     font-weight: 300;
+    font-size: 1.5em;
+    margin-top: 0;
+
 }
 .header-left{
     text-align: end;
@@ -31,7 +35,7 @@
     padding: 10px;
     border: none;
     cursor: pointer;
-    width: 200px;
+    width: 160px;
     height: 38px;
     margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -44,5 +48,7 @@
 .header-btn:hover {
     background: #457299;
     font-weight: 600;
+    transition: 0.5s;
+
 
 }

@@ -29,12 +29,12 @@ export const Opa = () => {
                             </h4>
                             <div className="email">
                                 <HiOutlineMail size={32} color="#2B4C68" className='icon' />
-                                <p>oralpathologyacademy@gmail.com</p>
+                                <a href='mailto:oralpathologyacademy@gmail.com'><p  className="email-p">oralpathologyacademy@gmail.com</p></a>
                             </div>
                             <div className="instagram">
                                 <a href='https://www.instagram.com/oralpathologyacademy/' target="_blank">
                                     <AiFillInstagram size={34} className='icon' />
-                                    <p>oralpathologyacademy</p>
+                                    <p className="instagram-p">oralpathologyacademy</p>
                                 </a>
                             </div>
                         </div>   

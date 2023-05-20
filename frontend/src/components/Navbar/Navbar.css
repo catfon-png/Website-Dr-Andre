@@ -1,10 +1,12 @@
 .navbar{
-    background: #B5C7D8;
+    background: rgb(181, 199, 216);
     color: white;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    font-weight: 800;
     padding: 0.5rem 1rem;
     position: sticky;
     top: 0;

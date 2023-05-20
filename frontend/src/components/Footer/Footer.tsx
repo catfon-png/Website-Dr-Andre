@@ -5,14 +5,12 @@ import './Footer.css'
 import { useNavigate } from 'react-router-dom'
 
 export const Footer = () => {
-    
+
     return (
         <footer>
             <div className='footer-left'>
-                <h3>Contactos</h3>
-                <div className='footer-left-contact-info'>
-                    <p>andrevilelalves@gmail.com</p>
-                </div>
+                <h3 className='footer-left-contact-heading'>Contactos</h3>
+                <p className='footer-left-contact-email'>andrevilelalves@gmail.com</p>
             </div>
             <div className='footer-right'>
                 <a href='https://www.instagram.com/andrevilelalves_dds/' target="_blank">

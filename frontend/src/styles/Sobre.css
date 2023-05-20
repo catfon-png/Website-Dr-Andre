@@ -5,13 +5,30 @@
     display: flex;
     flex-direction: column-reverse;
 }
+.sobre-andre-heading {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    color: rgb(43, 76, 104);
 
+}
+.sobre-andre-text, .sobre-trabalho-texto{
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 20px;
+
+}
 .sobre-andre-img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
+.sobre-trabalho-heading{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: #2B4C68;
 
+}
 .sobre-trabalho-info{
     display: flex;
     flex-direction: column;
@@ -21,7 +38,7 @@
 }
 .sobre-trabalho-logos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .logo{
@@ -29,6 +46,7 @@
     height: 150px;
     object-fit: contain;
 }
+
 @media (min-width: 800px) {
     .sobre-andre {
         display: flex;

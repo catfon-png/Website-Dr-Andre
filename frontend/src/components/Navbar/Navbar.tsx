@@ -12,8 +12,6 @@ const CustomLink = ({ to, children }: { to: string; children: React.ReactNode })
 }
 
 export const Navbar = () => {
-    // const path = window.location.pathname;
-    // const navRef = useRef()
     const [burgerClass, setBurgerClass] = useState('hamburger-menu unclicked');
     const [menuClass, setMenuClass] = useState('menu hidden')
     const [isMenuClicked, setIsMenuClicked] = useState(false)

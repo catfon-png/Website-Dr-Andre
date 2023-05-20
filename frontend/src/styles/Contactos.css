@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: column;
 }
+.contactos-heading{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    color: #2B4C68;
+    padding-top: 20px;
+}
 
 
 @media (min-width: 800px){

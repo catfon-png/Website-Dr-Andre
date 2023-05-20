@@ -2,7 +2,7 @@ import '../styles/Sobre.css'
 import foto from '../resources/IMG_3202.png'
 import logoWells from '../resources/drwells-logo.webp'
 import logoSimsmile from '../resources/simsmile.jpg'
-import logoHospital from '../resources/HPV.png'
+import logoSNS from '../resources/SNS.jpeg'
 import { Timeline } from '../components/Timeline/Timeline'
 
 export const Sobre = () => {
@@ -13,11 +13,13 @@ export const Sobre = () => {
                     <h1 className='sobre-andre-heading'>
                         Dr. André Vilela Alves
                     </h1>
-                    <p>O meu nome é André Vilela Alves e sou Médico Dentista.</p>
-                    <p>Desde 2020 que exerço a profissão que desde cedo me cativou, uma vez que permite transformar vidas.</p>
-                    <p>Ao longo do meu percurso, envolvi-me em vários projetos. Desde organização de congressos, projetos de voluntariado, associativismo, liderança em equipas de publicidade, entre outras.</p>
-                    <p>Estas atividades permitiram-me desenvolver várias soft skills: tornou-me mais dinâmico, interessado e rigoroso. Em simultâneo, também me deixou com extrema vontade em fazer sempre mais e melhor.</p>
-                    <p>Atualmente na minha profissão, dedico-me maioritariamente às áreas de Cirurgia Oral, Implantologia e Patologia Oral.</p>
+                    <div className="sobre-andre-text">
+                        <p>O meu nome é André Vilela Alves e sou Médico Dentista.</p>
+                        <p>Desde 2020 que exerço a profissão que desde cedo me cativou, uma vez que permite transformar vidas.</p>
+                        <p>Ao longo do meu percurso, envolvi-me em vários projetos. Desde organização de congressos, projetos de voluntariado, associativismo, liderança em equipas de publicidade, entre outras.</p>
+                        <p>Estas atividades permitiram-me desenvolver várias soft skills: tornou-me mais dinâmico, interessado e rigoroso. Em simultâneo, também me deixou com extrema vontade em fazer sempre mais e melhor.</p>
+                        <p>Atualmente na minha profissão, dedico-me maioritariamente às áreas de Cirurgia Oral, Implantologia e Patologia Oral.</p>
+                    </div>
                 </div>
                 <div className="sobre-andre-right">
                     <img src={foto} alt="Foto Dr. André Vilela Alves" className='sobre-andre-img' />
@@ -36,9 +38,9 @@ export const Sobre = () => {
                         </ul>
                     </div>
                     <div className="sobre-trabalho-logos">
-                        <img src={logoHospital} alt="Hospital Pulido valente logo"className='logo' />
-                        <img src={logoWells} alt="Dr Wells logo" className='logo'/>
-                        <img src={logoSimsmile} alt="SimSmile logo" className='logo'/>
+                        <img src={logoSNS} alt="Hospital Pulido valente logo" className='logo logoSNS' />
+                        <img src={logoWells} alt="Dr Wells logo" className='logo logoWells' />
+                        <img src={logoSimsmile} alt="SimSmile logo" className='logo logoSimsmile' />
                     </div>
                 </div>
             </div>

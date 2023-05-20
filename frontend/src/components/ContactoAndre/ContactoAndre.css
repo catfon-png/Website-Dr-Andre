@@ -5,11 +5,27 @@ a{
     display: flex;
     flex-direction: row;
 }
+a p{
+    color: #262522;
+}
 .contacto-img{
     width: 250px;
     height: 250px;
 }
 
+.contacto-text{
+    font-family: 'Open Sans', sans-serif;
+    color: #262522;
+
+
+}
+
+.contacto-title{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    color: #2B4C68;
+}
 .email, .instagram, .linkedin{
     display: flex;
     flex-direction: row;
@@ -24,15 +40,22 @@ a{
     position: relative;
     top: 10px;
 } 
+.linkedin{
+    padding-left: 2px;
+}
+.linkedin-p{
+    margin-left: 5px;
+}
 
 @media (min-width: 800px) and (max-width: 1300px){
     .contacto{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     } 
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1200px){
     .contacto{
         display: flex;
         flex-direction: row;
