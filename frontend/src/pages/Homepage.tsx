@@ -12,15 +12,19 @@ import '../styles/Homepage.css'
 import { Header } from '../components/Header/Header'
 
 export const Homepage = () => {
-  const allAreas: [string, string, JSX.Element][] = [[dentist, 'Cirurgia Oral', <DescriptionCO />],
+  const allAreas: [string, string, JSX.Element][] = 
+  [[dentist, 'Cirurgia Oral', <DescriptionCO />],
   [implants, 'Implantologia', <DescriptionImp />],
   [tongue, 'Patologia Oral', <DescriptionPO />]]
   return (
     <div>
       <Header />
-      <section className='area-container'>
-        {allAreas.map(([img, title, description]) =>
-          <AreaMD image={img} title={title} description={description} />)}
+      <section className="areas">
+        <h2 className="areas-title">Áreas de Atuação</h2>
+        <div className='areas-container'>
+          {allAreas.map(([img, title, description]) =>
+            <AreaMD image={img} title={title} description={description} />)}
+        </div>
       </section>
       <Opa />
       <Question />

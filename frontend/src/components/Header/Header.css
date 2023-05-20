@@ -9,10 +9,40 @@
 
 .header-title{
     padding-top: 20rem;
-    margin-block-end: 0
+    margin-block-end: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    color: #2B4C68;
 }
 
+.header-subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
 .header-left{
     text-align: end;
 }
 
+.header-btn {
+    background: #2B4C68;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 38px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    /* margin-right: 4px; */
+
+}
+
+.header-btn:hover {
+    background: #457299;
+    font-weight: 600;
+
+}

@@ -1,5 +1,8 @@
 import '../styles/Sobre.css'
 import foto from '../resources/IMG_3202.png'
+import logoWells from '../resources/drwells-logo.webp'
+import logoSimsmile from '../resources/simsmile.jpg'
+import logoHospital from '../resources/HPV.png'
 import { Timeline } from '../components/Timeline/Timeline'
 
 export const Sobre = () => {
@@ -17,19 +20,26 @@ export const Sobre = () => {
                     <p>Atualmente na minha profissão, dedico-me maioritariamente às áreas de Cirurgia Oral, Implantologia e Patologia Oral.</p>
                 </div>
                 <div className="sobre-andre-right">
-                    <img src={foto} alt="Foto Dr. André Vilela Alves" className='sobre-andre-img'/>
+                    <img src={foto} alt="Foto Dr. André Vilela Alves" className='sobre-andre-img' />
                 </div>
             </div>
             <div className="sobre-trabalho">
                 <h2 className='sobre-trabalho-heading'>Onde me encontrar</h2>
-                <div className="sobre-trabalho-texto">
-                    <p>Atualmente, exerço Medicina Dentária em vários locais, maioritariamente na zona metropolitana de Lisboa:</p>
-                    <ul>
-                        <li>Hospital Pulido Valente - USF das Conchas</li>
-                        <li>Alfragide - Clínica Dr. Wells</li>
-                        <li>Infantado - Clínica SimSmile</li>
-                        <li>Mafra - Clínica SimSmile</li>
-                    </ul>
+                <div className="sobre-trabalho-info">
+                    <div className="sobre-trabalho-texto">
+                        <p>Atualmente, exerço Medicina Dentária em vários locais, maioritariamente na zona metropolitana de Lisboa:</p>
+                        <ul>
+                            <li>Hospital Pulido Valente - USF das Conchas</li>
+                            <li>Alfragide - Clínica Dr. Wells</li>
+                            <li>Infantado - Clínica SimSmile</li>
+                            <li>Mafra - Clínica SimSmile</li>
+                        </ul>
+                    </div>
+                    <div className="sobre-trabalho-logos">
+                        <img src={logoHospital} alt="Hospital Pulido valente logo"className='logo' />
+                        <img src={logoWells} alt="Dr Wells logo" className='logo'/>
+                        <img src={logoSimsmile} alt="SimSmile logo" className='logo'/>
+                    </div>
                 </div>
             </div>
             <div className="sobre-formação">
