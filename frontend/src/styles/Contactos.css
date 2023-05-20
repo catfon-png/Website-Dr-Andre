@@ -1,12 +1,15 @@
 .contactos{
     display: flex;
     flex-direction: column;
+    margin: 0 3rem 0 3rem;
+
 }
 .contactos-heading{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 100;
     font-size: 3em;
     color: #2B4C68;
+    margin: 1rem 3rem 1rem 3rem;
     /* padding-top: 20px; */
 }
 
@@ -19,4 +22,19 @@
         /* flex-wrap: wrap; */
 
     }   
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .contactos, .contactos-heading{
+  margin: 2rem 5rem 1rem 5rem;
+
+  }
+}
+
+@media (min-width: 1024px){
+    .contactos, .contactos-heading{
+
+    margin: 2rem 10rem 1rem 10rem;
+  
+    } 
 }

@@ -1,6 +1,8 @@
-.sobre{
+.sobre-andre, .sobre-trabalho{
     /* margin: 0 !important; */
+    margin: 0 3rem 0 3rem;
 }
+
 .sobre-andre {
     display: flex;
     flex-direction: column-reverse;
@@ -10,6 +12,7 @@
     font-weight: 100;
     font-size: 3em;
     color: rgb(43, 76, 104);
+   
 
 }
 .sobre-andre-text, .sobre-trabalho-texto{
@@ -27,6 +30,8 @@
     font-weight: 100;
     font-size: 2em;
     color: #2B4C68;
+    display: flex;
+    justify-content: center;
 
 }
 .sobre-trabalho-info{
@@ -68,5 +73,19 @@
     .logo{
         margin-right: 10px;
     }
+}
 
+@media (min-width: 600px) and (max-width: 1024px) {
+    .sobre-andre, .sobre-trabalho{
+  margin: 0 5rem 0 5rem;
+
+  }
+}
+
+@media (min-width: 1024px){
+    .sobre-andre, .sobre-trabalho{
+
+    margin: 0 10rem 0 10rem;
+  
+    } 
 }

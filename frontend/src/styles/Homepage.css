@@ -1,7 +1,9 @@
-.areas-container{
+.areas-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 3rem 0 3rem;
+
 }
 
 .areas-container .area img {
@@ -11,7 +13,7 @@
 
 }
 
-.areas-title{
+.areas-title {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 2.5em;
     font-weight: 100;
@@ -21,6 +23,17 @@
 
 }
 
-.area-description{
 
-}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .areas-container{
+    margin: 0 5rem 0 5rem;
+  
+    }
+  }
+  
+  @media (min-width: 1024px){
+    .areas-container{
+      margin: 0 10rem 0 10rem;
+    
+      } 
+  }
