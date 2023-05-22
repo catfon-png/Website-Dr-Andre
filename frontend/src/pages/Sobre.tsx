@@ -1,8 +1,8 @@
 import '../styles/Sobre.css'
-import foto from '../resources/IMG_3202.png'
+import foto from '../resources/IMG_3202.webp'
 import logoWells from '../resources/drwells-logo.webp'
-import logoSimsmile from '../resources/simsmile.jpg'
-import logoSNS from '../resources/SNS.jpeg'
+import logoSimsmile from '../resources/simsmile.webp'
+import logoSNS from '../resources/SNS.webp'
 import { Timeline } from '../components/Timeline/Timeline'
 
 export const Sobre = () => {
@@ -17,7 +17,7 @@ export const Sobre = () => {
                         <p>O meu nome é André Vilela Alves e sou Médico Dentista.</p>
                         <p>Desde 2020 que exerço a profissão que desde cedo me cativou, uma vez que permite transformar vidas.</p>
                         <p>Ao longo do meu percurso, envolvi-me em vários projetos. Desde organização de congressos, projetos de voluntariado, associativismo, liderança em equipas de publicidade, entre outras.</p>
-                        <p>Estas atividades permitiram-me desenvolver várias soft skills: tornou-me mais dinâmico, interessado e rigoroso. Em simultâneo, também me deixou com extrema vontade em fazer sempre mais e melhor.</p>
+                        <p>Estas atividades permitiram-me desenvolver várias soft skills: tornaram-me mais dinâmico, interessado e rigoroso. Em simultâneo, desenvolvi uma extrema vontade em fazer sempre mais e melhor.</p>
                         <p>Atualmente na minha profissão, dedico-me maioritariamente às áreas de Cirurgia Oral, Implantologia e Patologia Oral.</p>
                     </div>
                 </div>

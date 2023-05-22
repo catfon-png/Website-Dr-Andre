@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Opa.css'
-import logo from '../../resources/opa black no bg.png'
-import flyer from '../../resources/IMG_0023.jpeg'
+import logo from '../../resources/opa black no bg.webp'
+import flyer from '../../resources/IMG_0023.webp'
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillInstagram } from 'react-icons/ai'
 

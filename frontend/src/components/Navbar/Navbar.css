@@ -24,6 +24,7 @@
     list-style: none;
     gap: 0.7rem;
     z-index: 1;
+    box-sizing: border-box;
 
 }
 .navbar-logo{

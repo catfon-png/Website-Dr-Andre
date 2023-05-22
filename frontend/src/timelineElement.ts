@@ -1,7 +1,7 @@
  let timelineElements = [
     {
         id: 1,
-        title: 'Experto em Medicina Oral',
+        title: "'Experto' em Medicina Oral",
         institution: 'Universidad Complutense de Madrid',
         year: '2023'
     },
@@ -34,6 +34,7 @@
     {
         id: 6,
         title: 'Estágio em consulta exclusiva de Medicina Oral',
+        institution: 'Clínica Integrada de Medicina Oral',
         description: 'Ministrado pelo Professor Dr. António Mano Azul',
         year: '2021'
 
@@ -94,7 +95,7 @@
     },
     {
         id: 15,
-        title: 'Conclusão de Mestrado em Medicina Dentária',
+        title: 'Conclusão de Mestrado integrado em Medicina Dentária',
         institution: 'Egas Moniz, School of Health and Science',
         year: '2020'
     },
@@ -152,7 +153,7 @@
     },
     {
         id: 24,
-        title: 'Início de Mestrado em Medicina Dentária',
+        title: 'Início de Mestrado integrado em Medicina Dentária',
         institution: 'Egas Moniz, School of Health and Science',
         year: '2015'
 
