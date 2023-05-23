@@ -39,7 +39,12 @@ export const Navbar = () => {
                     {/* <button className='navbar-close-btn'> <FaTimes size={25} /></button> */}
                 </ul>
             </div>
-            <button className='navbar-ham-menu' onClick={updateMenu}> <FaBars size={25} /></button>
+            <a href="#" className="toggle-btn">
+                <span className='bar'></span>
+                <span className='bar'></span>
+                <span className='bar'></span>
+            </a>
+            {/* <button className='navbar-ham-menu' onClick={updateMenu}> <FaBars size={25} /></button> */}
         </nav>
     )
 }

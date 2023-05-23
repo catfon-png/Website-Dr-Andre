@@ -59,6 +59,7 @@
     display: none;
 }
 
+
 @media (min-width: 700px) {
     .header-left {
         text-align: end;
