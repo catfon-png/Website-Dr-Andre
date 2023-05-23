@@ -6,15 +6,15 @@ import { Link, useLocation } from 'react-router-dom'
 const CustomLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
     const location = useLocation();
     const isActive = location.pathname === to;
-    const className = isActive ? 'active' : '';
+    const className = isActive ? 'active1' : '';
     return <Link to={to} className={className}>{children}</Link>;
 }
 
 export const Navbar2 = () => {
-    const [isActive, setIsActive] = useState(false);
+    const [isMenuActive, setIsMenuActive] = useState(false);
 
     const toggleMenu = () => {
-        setIsActive(!isActive);
+        setIsMenuActive(!isMenuActive);
     };
     return (
         <nav className="navbar">
@@ -24,7 +24,7 @@ export const Navbar2 = () => {
                 <span className="bar"></span>
                 <span className="bar"></span>
             </a>
-            <div className={`navbar-links ${isActive ? 'active' : ''}`}>
+            <div className={`navbar-links ${isMenuActive ? 'active' : ''}`}>
                 <ul>
                     <li><CustomLink to='/areas'>Áreas</CustomLink></li>
                     <li><CustomLink to='/cursos'>Cursos</CustomLink></li>

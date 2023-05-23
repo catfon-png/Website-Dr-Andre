@@ -13,8 +13,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-
-
 }
 
 .navbar-logo {
@@ -36,7 +34,10 @@
 .navbar-links li {
     list-style: none;
 }
-
+ul li:hover{
+    font-weight: 600;
+    transition: 0.4s;
+}
 .navbar-links li a {
     display: block;
     text-decoration: none;
@@ -44,15 +45,17 @@
     padding: 1rem;
 }
 
-.navbar-links:hover {
+ul li:hover {
     font-weight: 600;
     transition: 0.4s;
     /* background-color: #555; */
 }
-.active{
+.active1{
     border-bottom: 3px solid white;
-    font-weight: 600;
+    font-weight: bold;
+    /* width: 50px; */
     transition: 0.5s;
+    /* background-color: rgb(201, 219, 237); */
 }
 
 .toggle-button {
@@ -77,6 +80,7 @@
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        /* background: rgb(117, 139, 159) */
     }
 
     .toggle-button {
@@ -98,7 +102,7 @@
     }
 
     .navbar-links ul li a {
-        padding: .5rem 1rem;
+        padding: .5rem 0.6rem;
     }
 
     .navbar-links.active {
