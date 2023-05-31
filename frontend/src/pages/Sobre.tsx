@@ -4,12 +4,15 @@ import logoWells from '../resources/drwells-logo.webp'
 import logoSimsmile from '../resources/simsmile.webp'
 import logoSNS from '../resources/SNS.webp'
 import { Timeline } from '../components/Timeline/Timeline'
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react";
 
 
 export const Sobre = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
     return (
-        <div className='sobre'>
+        <div className='sobre' ref={ref}>
             <div
                 className="sobre-andre">
                 <motion.div animate={{ x: ["-50%", "0%"], opacity: 1 }}
@@ -32,9 +35,11 @@ export const Sobre = () => {
                     <img src={foto} alt="Foto Dr. André Vilela Alves" className='sobre-andre-img' />
                 </motion.div>
             </div>
-            <div className="sobre-trabalho">
+            <motion.div animate={{  x: ["-20%", "0%"], opacity: 1 }}
+                transition={{ type: "tween", duration: 1 }}
+                initial={{ x: "-30%", opacity: 0 }} className="sobre-trabalho">
+            
                 <hr className="horizontal-line-sobre" />
-
                 <h2 className='sobre-trabalho-heading'>Onde me encontrar</h2>
                 <div className="sobre-trabalho-info">
                     <div className="sobre-trabalho-texto">
@@ -52,7 +57,7 @@ export const Sobre = () => {
                         <img src={logoSimsmile} alt="SimSmile logo" className='logo logoSimsmile' />
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className="sobre-formação">
                 <Timeline />
             </div>

@@ -13,7 +13,20 @@
     /* padding-top: 20px; */
 }
 
-
+@media (max-width: 400px) {
+    .scroller-container {
+      overflow-x: scroll;
+    }
+  
+    .contactos {
+      flex-wrap: nowrap;
+    }
+  
+    .email-icon {
+      display: flex;
+    }
+  }
+  
 @media (min-width: 800px){
     .contactos{
         display: flex;
@@ -37,4 +50,8 @@
     margin: 2rem 10rem 1rem 10rem;
   
     } 
+    .scroller-container {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
 }

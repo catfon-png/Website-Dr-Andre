@@ -38,9 +38,10 @@
     list-style: none;
 }
 
-ul li:hover {
+.navbar-links li:hover {
     font-weight: 600;
 }
+
 
 .navbar-links li a {
     display: block;
@@ -49,10 +50,6 @@ ul li:hover {
     padding: 0rem 1rem 0.5rem 1rem;
 }
 
-ul li:hover {
-    font-weight: 900;
-    /* background-color: #555; */
-}
 
 .active1 {
     border-bottom: 2px solid white;

@@ -25,13 +25,15 @@ export const Homepage = () => {
   return (
     <div ref={ref}>
       <Header />
-      <section className="areas">
+      <motion.section className="areas" animate={{ x: ["30%", "0%"], opacity: 1 }}
+        transition={{ type: "tween", duration: 1 }}
+        initial={{ x: "40%", opacity: 0 }}>
         <h2 className="areas-title">Áreas de Atuação</h2>
         <div className='areas-container'>
           {allAreas.map(([img, title, description]) =>
             <AreaMD image={img} title={title} description={description} />)}
         </div>
-      </section>
+      </motion.section>
       {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: isInView ? 1 : 0 }}

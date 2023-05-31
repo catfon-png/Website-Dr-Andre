@@ -5,6 +5,8 @@ import logo from '../../resources/opa black no bg.webp'
 import flyer from '../../resources/IMG_0023.webp'
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillInstagram } from 'react-icons/ai'
+import { motion} from "framer-motion"
+
 
 export const Opa = () => {
     const navigate = useNavigate();
@@ -18,7 +20,9 @@ export const Opa = () => {
 
     return (
         <section className='opa'>
-            <div className='opa-left'>
+            <motion.div animate={{ x: ["-50%", "0%"], opacity: 1 }}
+                    transition={{ type: "tween", duration: 1 }}
+                    initial={{ x: "-80%", opacity: 0 }} className='opa-left'>
                 <img src={logo} alt="Oral Pathology Academy Logo" />
                 {!isHomepage ?
                     <div className="flyer-e-contactos">
@@ -41,8 +45,10 @@ export const Opa = () => {
                     </div> :
                     null
                 }
-            </div>
-            <div className='opa-right'>
+            </motion.div>
+            <motion.div animate={{ x: ["50%", "0%"], opacity: 1 }}
+                    transition={{ type: "tween", duration: 1 }}
+                    initial={{ x: "80%", opacity: 0 }} className='opa-right'>
                 <h1 className="opa-heading">Oral Pathology Academy</h1>
                 {!isHomepage ?
                     <div className='opa-long-text'>
@@ -69,7 +75,7 @@ export const Opa = () => {
                     {isHomepage ?
                         <button className='btn-contacto' onClick={navigateToCursos}>Saiba mais &gt;</button> : <div></div>}
                 </div>
-            </div>
+            </motion.div>
 
         </section>
     )
