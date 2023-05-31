@@ -8,6 +8,10 @@ a{
 a p{
     color: #262522;
 }
+
+.contacto{
+    margin-bottom: 2rem;
+}
 .contacto-img{
     width: 250px;
     height: 250px;
@@ -16,7 +20,6 @@ a p{
 .contacto-text{
     font-family: 'Open Sans', sans-serif;
     color: #262522;
-
 
 }
 

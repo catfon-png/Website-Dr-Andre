@@ -42,7 +42,16 @@ img {
     
 
 }
-.opa-long-text, .opa-short-text, .contactos-opa-heading, .email, .instagram{
+
+.contactos-opa{
+    margin-bottom: 2rem;
+}
+
+.contactos-opa-heading{
+    font-family: 'Open Sans', sans-serif;
+    color: #2B4C68;
+}
+.opa-long-text, .opa-short-text, .email, .instagram{
     font-family: 'Open Sans', sans-serif;
     color: #262522;
 }

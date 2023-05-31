@@ -1,4 +1,5 @@
 import './AreaMD.css'
+import { motion } from "framer-motion"
 
 type AreaProps = {
     image: string,
@@ -15,11 +16,8 @@ export const AreaMD = ({ image, title, description }: AreaProps) => {
                 </a>
             </div>
             <div className="area-text">
-            
                 <h2 className="area-title">
                 <a href="/areas">{title}</a></h2>
-                
-
                 {description}
             </div>
         </div>

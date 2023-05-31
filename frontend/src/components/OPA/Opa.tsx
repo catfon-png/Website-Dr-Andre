@@ -33,7 +33,7 @@ export const Opa = () => {
                             </div>
                             <div className="instagram">
                                 <a href='https://www.instagram.com/oralpathologyacademy/' target="_blank">
-                                    <AiFillInstagram size={34} className='icon' />
+                                    <AiFillInstagram size={32} className='icon' />
                                     <p className="instagram-p">oralpathologyacademy</p>
                                 </a>
                             </div>

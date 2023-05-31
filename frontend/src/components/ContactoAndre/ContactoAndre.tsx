@@ -41,7 +41,7 @@ export const ContactoAndre = ({ foto, titulo, descriçãoFoto, email, iglink, in
                         </a>
                     </div>
                     :
-                    <div></div>}
+                    null}
             </div>
 
         </div>

@@ -43,12 +43,15 @@
 }
 .sobre-trabalho-logos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* width: 18vw; */
+    /* height: 4rem; */
+    
 }
 
 .logo{
     width: 150px;
-    height: 150px;
+    height: 100px;
     object-fit: contain;
 }
 
