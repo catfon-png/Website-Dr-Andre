@@ -28,6 +28,7 @@
 
 .header-left {
     text-align: center;
+    /* justify-content: center; */
 }
 
 .header-btn {
@@ -58,7 +59,20 @@
 .header-right{
     display: none;
 }
+.header-left {
+    animation: slideIn 1s;
+  }
 
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 @media (min-width: 700px) {
     .header-left {
@@ -70,4 +84,22 @@
     .header-title {
         padding-top: 15rem;
     }
+    @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateX(-50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
 }
+
+  
+
+   
+  
+  
+
+  

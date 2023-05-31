@@ -7,7 +7,7 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
     gap: 2rem;
-    /* font-weight: 800; */
+    font-weight: 400;
     padding: 0.5rem 1rem;
     position: sticky;
     top: 0;
@@ -30,6 +30,8 @@
     display: flex;
     margin: 0 3rem 0 0;
     padding: 0;
+    text-align: center;
+
 }
 
 .navbar-links li {
@@ -48,8 +50,7 @@ ul li:hover {
 }
 
 ul li:hover {
-    font-weight: 600;
-    transition: 0.4s;
+    font-weight: 900;
     /* background-color: #555; */
 }
 

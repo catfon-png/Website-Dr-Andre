@@ -1,15 +1,27 @@
+.areas {
+    margin-top: 4rem;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 1px solid #778088;
+    /* margin: 1rem 0; */
+    margin: 2rem 3rem 0rem 3rem;
+
+}
+
 .areas-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 3rem 0 3rem;
 
 }
 
 .areas-container .area img {
     object-fit: contain;
-    width: 20vw;
-    height: 20vh;
+    width: 18vw;
+    height: 18vh;
 
 }
 
@@ -25,15 +37,24 @@
 
 
 @media (min-width: 600px) and (max-width: 1024px) {
-    .areas-container{
-    margin: 0 5rem 0 5rem;
-  
+    .areas-container {
+        margin: 0 5rem 0 5rem;
+        justify-content: space-around;
     }
-  }
-  
-  @media (min-width: 1024px){
-    .areas-container{
-      margin: 0 10rem 0 10rem;
+    .horizontal-line {
+        margin: 2rem 5rem 0rem 5rem;
     
-      } 
-  }
+    }
+}
+
+@media (min-width: 1024px) {
+    .areas-container {
+        margin: 0 10rem 0 10rem;
+        justify-content: space-around;
+    }
+    .horizontal-line {
+        margin: 2rem 10rem 0rem 10rem;
+
+    
+    }
+}

@@ -9,3 +9,15 @@
     text-align: center;
     margin-top: 0;
 }
+
+.area-description-short{
+    font-size: 0.8em;
+
+}
+
+@media (min-width: 600px){
+    .area-description-short{
+        font-size: 1em;
+    
+    }
+}

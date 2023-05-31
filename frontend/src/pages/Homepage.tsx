@@ -27,6 +27,7 @@ export const Homepage = () => {
             <AreaMD image={img} title={title} description={description} />)}
         </div>
       </section>
+            <hr className="horizontal-line" />
       <Opa />
       <Question />
     </div>

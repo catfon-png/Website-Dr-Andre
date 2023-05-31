@@ -13,8 +13,9 @@ export const DescriptionImp = () => {
                 <p>A ausência parcial ou total de dentes, tem um impacto severo na qualidade de vida dos pacientes, comprometendo normal função e estética, com consequências na saúde dos pacientes.</p>
                 <p>Os implantes são então, uma das diversas alternativas existentes, para a substituição de dentes perdidos.</p>
                 <p>Cada caso será dotado de uma especificidade única, pelo que deverá ser realizada uma planificação extensa do procedimento cirúrgico e posterior reabilitação, com recurso a meios auxiliares de diagnóstico, como a tomografia computorizada de feixe cónico, por exemplo.</p>
-            </div> :
-                <p className="area-description-short">Área da Medicina Dentária que se dedica à reabilitação de dentes ausentes</p>}
+            </div> : null
+                // <p className="area-description-short">Área da Medicina Dentária que se dedica à reabilitação de dentes ausentes</p>
+            }
         </div>
     )
 }

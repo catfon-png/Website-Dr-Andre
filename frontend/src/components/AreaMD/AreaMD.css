@@ -1,15 +1,24 @@
 .area-title{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: 400;
     display: flex;
     justify-content: center;
-    color: #2B4C68
+    color: #2B4C68;
+    cursor: pointer;
     
 }
 .area-img{
     display: flex;
     justify-content: center;
     margin-right: 0;
+    cursor: pointer;
+
 }
 
+@media (min-width: 600px){
+    .area-title{
+    font-size: 1.7em;
+
+    }
+}
