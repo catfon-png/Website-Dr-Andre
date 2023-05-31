@@ -39,7 +39,7 @@ export const Opa = () => {
                             </div>
                         </div>   
                     </div> :
-                    <div></div>
+                    null
                 }
             </div>
             <div className='opa-right'>

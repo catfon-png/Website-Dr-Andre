@@ -19,6 +19,6 @@
 @media (min-width: 600px){
     .area-title{
     font-size: 1.7em;
-
+    flex-wrap: wrap;
     }
 }

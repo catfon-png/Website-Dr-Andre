@@ -4,12 +4,17 @@ import logoWells from '../resources/drwells-logo.webp'
 import logoSimsmile from '../resources/simsmile.webp'
 import logoSNS from '../resources/SNS.webp'
 import { Timeline } from '../components/Timeline/Timeline'
+import { motion } from "framer-motion"
+
 
 export const Sobre = () => {
     return (
         <div className='sobre'>
-            <div className="sobre-andre">
-                <div className="sobre-andre-left">
+            <div
+                className="sobre-andre">
+                <motion.div animate={{ x: ["-50%", "0%"], opacity: 1 }}
+                    transition={{ type: "tween", duration: 1 }}
+                    initial={{ x: "-80%", opacity: 0 }} className="sobre-andre-left">
                     <h1 className='sobre-andre-heading'>
                         Dr. André Vilela Alves
                     </h1>
@@ -20,12 +25,16 @@ export const Sobre = () => {
                         <p>Estas atividades permitiram-me desenvolver várias soft skills: tornaram-me mais dinâmico, interessado e rigoroso. Em simultâneo, desenvolvi uma extrema vontade em fazer sempre mais e melhor.</p>
                         <p>Atualmente na minha profissão, dedico-me maioritariamente às áreas de Cirurgia Oral, Implantologia e Patologia Oral.</p>
                     </div>
-                </div>
-                <div className="sobre-andre-right">
+                </motion.div>
+                <motion.div animate={{ x: ["50%", "0%"], opacity: 1 }}
+                    transition={{ type: "tween", duration: 1 }}
+                    initial={{ x: "80%", opacity: 0 }} className="sobre-andre-right">
                     <img src={foto} alt="Foto Dr. André Vilela Alves" className='sobre-andre-img' />
-                </div>
+                </motion.div>
             </div>
             <div className="sobre-trabalho">
+                <hr className="horizontal-line-sobre" />
+
                 <h2 className='sobre-trabalho-heading'>Onde me encontrar</h2>
                 <div className="sobre-trabalho-info">
                     <div className="sobre-trabalho-texto">

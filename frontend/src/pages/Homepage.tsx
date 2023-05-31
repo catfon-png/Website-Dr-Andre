@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import implants from '../resources/implants (2).webp'
 import dentist from '../resources/dentist.webp'
 import tongue from '../resources/tongue.webp'
@@ -25,24 +25,22 @@ export const Homepage = () => {
   return (
     <div ref={ref}>
       <Header />
-      <section className="areas" ref={ref}>
-        
-          <h2 className="areas-title">Áreas de Atuação</h2>
-          <div className='areas-container'>
-            {allAreas.map(([img, title, description]) =>
-              <AreaMD image={img} title={title} description={description} />)}
-          </div>
+      <section className="areas">
+        <h2 className="areas-title">Áreas de Atuação</h2>
+        <div className='areas-container'>
+          {allAreas.map(([img, title, description]) =>
+            <AreaMD image={img} title={title} description={description} />)}
+        </div>
       </section>
-      <hr className="horizontal-line" />
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: isInView ? 1 : 0 }}
         transition={{ duration: 3 }}
-        className="content">
-
-      <Opa />
-        </motion.div>
-      <Question />
+        className="content"> */}
+        <hr className="horizontal-line" />
+        <Opa />
+        <Question />
+      {/* </motion.div> */}
     </div>
   )
 }
