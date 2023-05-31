@@ -10,6 +10,7 @@ import { DescriptionPO } from '../components/AreaMD/Descriptions/DescriptionPO'
 import { AreaMD } from '../components/AreaMD/AreaMD'
 import '../styles/Homepage.css'
 import { Header } from '../components/Header/Header'
+import { motion } from "framer-motion"
 
 export const Homepage = () => {
   const allAreas: [string, string, JSX.Element][] = 
