@@ -39,14 +39,10 @@
     display: flex;
     flex-direction: column;
 }
-.sobre-formação {
-    /* margin: 0 !important; */
-}
+
 .sobre-trabalho-logos{
     display: flex;
     flex-direction: column;
-    /* width: 18vw; */
-    /* height: 4rem; */
     
 }
 
@@ -80,16 +76,25 @@
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-    .sobre-andre, .sobre-trabalho{
+    .sobre-andre {
   margin: 6rem 5rem 0 5rem;
 
   }
+ .sobre-trabalho{
+    margin: 0rem 5rem 0 5rem;
+  
+    }
 }
 
 @media (min-width: 1024px){
-    .sobre-andre, .sobre-trabalho{
+    .sobre-andre{
 
     margin: 6rem 10rem 0 10rem;
   
     } 
+    .sobre-trabalho{
+
+        margin: 0rem 10rem 0 10rem;
+      
+        } 
 }
