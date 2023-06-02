@@ -19,17 +19,17 @@ export const Navbar2 = () => {
     return (
         <nav className="navbar">
             <Link to='/' className='navbar-logo'>Dr André</Link>
-            <a href="#" className="toggle-button" onClick={toggleMenu}>
+            <a className="toggle-button" onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
             </a>
             <div className={`navbar-links ${isMenuActive ? 'active' : ''}`}>
                 <ul>
-                    <li><CustomLink to='/areas'>Áreas</CustomLink></li>
-                    <li><CustomLink to='/cursos'>Cursos</CustomLink></li>
-                    <li><CustomLink to='/sobre'>Sobre</CustomLink></li>
-                    <li><CustomLink to='/contactos'>Contactos</CustomLink></li>
+                    <li onClick={toggleMenu}><CustomLink to='/areas'>Áreas</CustomLink></li>
+                    <li onClick={toggleMenu}><CustomLink to='/cursos'>Cursos</CustomLink></li>
+                    <li onClick={toggleMenu}><CustomLink to='/sobre'>Sobre</CustomLink></li>
+                    <li onClick={toggleMenu}><CustomLink to='/contactos'>Contactos</CustomLink></li>
                 </ul>
             </div>
         </nav>

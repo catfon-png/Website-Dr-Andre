@@ -1,17 +1,18 @@
 .sobre-andre, .sobre-trabalho{
     /* margin: 0 !important; */
-    margin: 0 3rem 0 3rem;
+    margin: 4rem 3rem 0 3rem;
 }
 
 .sobre-andre {
     display: flex;
     flex-direction: column-reverse;
-}
+    }
 .sobre-andre-heading {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 100;
     font-size: 3em;
     color: rgb(43, 76, 104);
+    margin-top: 0;
    
 
 }
@@ -80,7 +81,7 @@
 
 @media (min-width: 600px) and (max-width: 1024px) {
     .sobre-andre, .sobre-trabalho{
-  margin: 0 5rem 0 5rem;
+  margin: 6rem 5rem 0 5rem;
 
   }
 }
@@ -88,7 +89,7 @@
 @media (min-width: 1024px){
     .sobre-andre, .sobre-trabalho{
 
-    margin: 0 10rem 0 10rem;
+    margin: 6rem 10rem 0 10rem;
   
     } 
 }

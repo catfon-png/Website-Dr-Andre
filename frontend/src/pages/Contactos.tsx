@@ -1,6 +1,6 @@
 import { ContactoAndre } from '../components/ContactoAndre/ContactoAndre'
 import fotoAndre from '../resources/foto-andre.webp'
-import logoOPA from '../resources/opa black no bg.webp'
+import logoOPA from '../resources/opa-black-no-bg.webp'
 import '../styles/Contactos.css'
 import { motion } from 'framer-motion';
 

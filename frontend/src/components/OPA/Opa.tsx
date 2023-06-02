@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Opa.css'
-import logo from '../../resources/opa black no bg.webp'
+import logo from '../../resources/opa-black-no-bg.webp'
 import flyer from '../../resources/IMG_0023.webp'
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillInstagram } from 'react-icons/ai'
@@ -23,7 +23,7 @@ export const Opa = () => {
             <motion.div animate={{ x: ["-50%", "0%"], opacity: 1 }}
                     transition={{ type: "tween", duration: 1 }}
                     initial={{ x: "-80%", opacity: 0 }} className='opa-left'>
-                <img src={logo} alt="Oral Pathology Academy Logo" />
+                <img src={logo} alt="Oral Pathology Academy Logo" className='opa-logo'/>
                 {!isHomepage ?
                     <div className="flyer-e-contactos">
                         <img src={flyer} alt="Oral Pathology Academy Flyer" />

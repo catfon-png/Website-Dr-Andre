@@ -5,8 +5,10 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 6rem;
-    /* margin-top: 0 !important;
-    top: -5;*/
+  margin-top: 4.5rem;
+
+    /* margin-top: 0 !important; */
+    /* top: -5; */
 }
 
 .header-title {

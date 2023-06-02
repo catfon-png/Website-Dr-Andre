@@ -1,7 +1,7 @@
 .opa {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem 0 3rem;
+    margin: 5rem 3rem 0 3rem;
 
 }
 
@@ -13,7 +13,7 @@
 img {
     width: 300px;
     height: 300px;
-    align-self: center;
+    /* align-self: center; */
     
 }
 
@@ -29,7 +29,7 @@ img {
     justify-content: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 100;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #2B4C68;
     margin: 0px;
 
@@ -42,7 +42,10 @@ img {
     
 
 }
-
+.opa-logo{
+    /* height: 150px; */
+    object-fit: contain;
+}
 .contactos-opa{
     margin-bottom: 2rem;
 }
@@ -148,7 +151,7 @@ img {
         justify-content: flex-start;
     }
     .opa-right {
-        margin: 3rem 0rem 1rem 2rem;
+        margin: 1rem 0rem 1rem 2rem;
     }
 
     .opa-text {
@@ -159,14 +162,14 @@ img {
 
 @media (min-width: 600px) and (max-width: 1024px) {
     .opa{
-    margin: 0 5rem 1rem 5rem;
+    margin: 5rem 5rem 1rem 5rem;
   
     }
   }
   
   @media (min-width: 1024px){
     .opa{
-      margin: 0 10rem 1rem 10rem;
+      margin: 5rem 10rem 1rem 10rem;
     
       } 
   }

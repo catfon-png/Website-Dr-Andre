@@ -13,8 +13,9 @@ a p{
     margin-bottom: 2rem;
 }
 .contacto-img{
-    width: 250px;
+    width: 260px;
     height: 250px;
+    object-fit: cover;
 }
 
 .contacto-text{
