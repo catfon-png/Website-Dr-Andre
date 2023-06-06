@@ -107,8 +107,6 @@
         flex-direction: column;
         justify-content: center;
         margin: 0 0rem 0 0;
-
-
     }
 
     .navbar-links ul li {
@@ -124,9 +122,4 @@
         display: flex;
 
     }
-
-    /* .navbar-links.active ul li {
-    /* background: rgb(206, 227, 247); */
-
-    /* } */
 }

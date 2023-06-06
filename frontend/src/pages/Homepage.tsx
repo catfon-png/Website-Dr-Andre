@@ -66,7 +66,7 @@ export const Homepage = () => {
       <motion.div ref={ref} animate={animation}>
         <Opa />
       {/* </motion.div> */}
-      {/* <motion.div animate={animation}> */}
+      {/* <motion.div ref={ref} animate={animation}> */}
         <Question />
       </motion.div>
 
