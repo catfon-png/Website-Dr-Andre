@@ -5,18 +5,19 @@
 
 .timeline-title {
     font-size: 1em;
-
-   
-
 }
-.vertical-timeline-element-title{
+
+.vertical-timeline-element-title {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 600;
     font-size: 1.6em;
     color: #2B4C68;
     text-shadow: -0.5px 0 rgb(255, 255, 255), 0 0.5px rgb(255, 255, 255), 0.5px 0 rgb(255, 255, 255), 0 -0.5px rgb(255, 255, 255);
 }
-.vertical-timeline-element-subtitle, #description, .date{
+
+.vertical-timeline-element-subtitle,
+#description,
+.date {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 1em;
@@ -24,6 +25,7 @@
     /* text-shadow: -0.5px 0 rgb(0, 0, 0), 0 0.5px rgb(0, 0, 0), 0.5px 0 rgb(0, 0, 0), 0 -0.5px rgb(0, 0, 0); */
 
 }
+
 h3 {
     padding-top: 0.25em;
 }
@@ -42,13 +44,27 @@ h3 {
     font-weight: 100;
     font-size: 2em;
     color: black;
-
 }
-
+.timeline-inicio{
+    background-color:#2B4C68;
+    margin-bottom: 0;
+}
 .vertical-timeline-element-content-arrow {
     display: none;
 }
 
 .vertical-timeline-element-icon {
     /* display: none; */
+}
+
+
+@media (max-width:800px) {
+
+    .timeline-fim,
+    .timeline-inicio {
+        display: flex;
+        justify-content: left;
+        padding: 5px;
+
+    }
 }

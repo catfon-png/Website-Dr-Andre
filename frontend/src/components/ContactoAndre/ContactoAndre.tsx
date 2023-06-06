@@ -2,6 +2,9 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillInstagram } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
 import './ContactoAndre.css'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from 'react';
 
 type ContactProps = {
     foto: string,
@@ -15,10 +18,27 @@ type ContactProps = {
 }
 
 export const ContactoAndre = ({ foto, titulo, descriçãoFoto, email, iglink, instagram, lilink, linkedin }: ContactProps) => {
+    const { ref: contactRef, inView: contactInView } = useInView();
+    const contactAnimation = useAnimation();
 
+    useEffect(() => {
+        if (contactInView) {
+            contactAnimation.start({
+            opacity: 1,
+            x: 0,
+            transition: { delay: 0.2, duration: 0.7 },
+          });
+        } else {
+            contactAnimation.start({
+            opacity: 0,
+            x: 100,
+            transition: { duration: 0.3 },
+          });
+        }
+      }, [contactInView]);
 
     return (
-        <div className='contacto'>
+        <motion.div ref={contactRef} animate={contactAnimation}  className='contacto'>
             <img src={foto} alt={descriçãoFoto} className="contacto-img"/>
             <div className="contacto-text">
                 <h2 className="contacto-title">{titulo}</h2>
@@ -43,7 +63,6 @@ export const ContactoAndre = ({ foto, titulo, descriçãoFoto, email, iglink, in
                     :
                     null}
             </div>
-
-        </div>
+        </motion.div>
     )
 }

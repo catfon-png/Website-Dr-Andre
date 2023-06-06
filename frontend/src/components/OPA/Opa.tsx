@@ -26,7 +26,7 @@ export const Opa = () => {
                 <img src={logo} alt="Oral Pathology Academy Logo" className='opa-logo'/>
                 {!isHomepage ?
                     <div className="flyer-e-contactos">
-                        <img src={flyer} alt="Oral Pathology Academy Flyer" />
+                        <img src={flyer} alt="Oral Pathology Academy Flyer" className='opa-flyer'/>
                         <div className="contactos-opa">
                             <h4 className="contactos-opa-heading">
                                 Entre em contacto:

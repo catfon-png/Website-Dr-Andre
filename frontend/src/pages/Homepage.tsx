@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import implants from '../resources/implants (2).webp';
 import dentist from '../resources/dentist.webp';
 import tongue from '../resources/tongue.webp';
@@ -20,31 +20,67 @@ export const Homepage = () => {
     [implants, 'Implantologia', <DescriptionImp />],
     [tongue, 'Patologia Oral', <DescriptionPO />]]
 
-// maybe two refs for two different divs
-  const { ref, inView } = useInView({
-    // threshold: 0.1,
-  });
+// animation for opa & question, when in same div.motion
+  // const { ref, inView } = useInView({
+  //   // threshold: 0.1,
+  // });
 
-  const animation = useAnimation();
+  // const animation = useAnimation();
+
+  // useEffect(() => {
+  //   // console.log("use effect hook, inView = ", inView);
+  //   if (inView) {
+  //     animation.start({
+  //       opacity: 1,
+  //       x: 0,
+  //       transition: { delay: 0.2, duration: 0.7 },
+  //     });
+  //   }
+  //   if (!inView) {
+  //     animation.start({
+  //       opacity: 0,
+  //       x: 100,
+  //       transition: { duration: 0.3 },
+  //     });
+  //   }
+  // }, [inView]);
+  const { ref: opaRef, inView: opaInView } = useInView();
+  const opaAnimation = useAnimation();
+
+  const { ref: questionRef, inView: questionInView } = useInView();
+  const questionAnimation = useAnimation();
 
   useEffect(() => {
-    // console.log("use effect hook, inView = ", inView);
-    if (inView) {
-      animation.start({
+    if (opaInView) {
+      opaAnimation.start({
         opacity: 1,
         x: 0,
         transition: { delay: 0.2, duration: 0.7 },
       });
-    }
-    if (!inView) {
-      animation.start({
+    } else {
+      opaAnimation.start({
         opacity: 0,
         x: 100,
         transition: { duration: 0.3 },
       });
     }
-  }, [inView]);
+  }, [opaInView]);
 
+  useEffect(() => {
+    if (questionInView) {
+      questionAnimation.start({
+        opacity: 1,
+        x: 0,
+        transition: { delay: 0.2, duration: 0.7 },
+      });
+    } else {
+      questionAnimation.start({
+        opacity: 0,
+        x: -100,
+        transition: { duration: 0.3 },
+      });
+    }
+  }, [questionInView]);
   return (
     <div >
       <Header />
@@ -63,10 +99,12 @@ export const Homepage = () => {
         transition={{ duration: 3 }}
         className="content"> */}
       <hr className="horizontal-line" />
-      <motion.div ref={ref} animate={animation}>
-        <Opa />
-      {/* </motion.div> */}
       {/* <motion.div ref={ref} animate={animation}> */}
+      <motion.div ref={opaRef} animate={opaAnimation}>
+        <Opa />
+      </motion.div>
+      {/* <motion.div ref={ref} animate={animation}> */}
+      <motion.div ref={questionRef} animate={questionAnimation}>
         <Question />
       </motion.div>
 
